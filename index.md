@@ -4,9 +4,8 @@ title: ccroic.github.io
 ---
 
 ## About
-I am 10 years old russian developer
+A russian developer
 I know python and ruby with lua on half
-I 
 Stackoverflow, YouTube, are helping me in development of my things
 
 ## My projects
