@@ -1,27 +1,20 @@
 ---
 layout: default
-title: LightSpeed Contact
+title: ccroic.github.io
 ---
 
 ## About
-LightSpeed is a lightweight Jekyll theme designed to be privacy-friendly (~~no~~ _very little_ JavaScript), fast, and
-excellent at delivering content.
+I am 10 years old russian developer
+I know python and ruby with lua on half
+I 
+Stackoverflow, YouTube, are helping me in development of my things
 
-## About, Further
-This second section demonstrates spacing. CSS is kept to a minimum with minor styling
-for site colours and spacing. prism.js is used for code styling.    
-<br>
-Here's a new paragraph for you.  
-
-## Features
-- Pagination
-    - Posts
-    - Categories
-- Posts
-- RSS
-- Syntax highlighting
-- Basic Mobile Support
-- SEO Plugin
+## My projects
+I have projects like kalware, watersense,
+cocodos, and others.
+I currently work on watersense.
+I finished the work of kalware, and cocodos.
 
 ## Contact
-Email me, [tom@tomjack.ca](mailto:tom@tomjack.ca).
+Github : [ccroic](https://github.com/ccroic)
+Discord : ccroic
