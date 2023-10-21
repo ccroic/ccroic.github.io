@@ -4,7 +4,6 @@ title: ccroic.github.io
 ---
 
 ## About
-A russian developer
 I know python and ruby with lua on half
 Stackoverflow, YouTube, are helping me in development of my things
 
