@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zooming Image</title>
+    <style>
+        body {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+        img {
+            width: 400px;
+            height: auto;
+            transition: all 1s;
+        }
+    </style>
+    <script>
+        function showImage() {
+            document.getElementById("img").style.transform = "scale(1.5)";
+        }
+        function hideImage() {
+            setTimeout(function() {
+                document.getElementById("img").style.transform = "scale(1)";
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <img id="img" src="https://files.mastodon.social/accounts/avatars/111/470/305/626/910/504/original/26d855b2f4d5a866.jpg" onclick="showImage()" onmouseout="hideImage()">
+</body>
+  <a rel="me" href="https://mastodon.social/@CocoaTheOne">Mastodon</a>
+</html>
