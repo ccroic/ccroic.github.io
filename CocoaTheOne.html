@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Zooming Image</title>
+    <title>I'm only the one.</title>
     <style>
         body {
             background-color: gray;
@@ -36,6 +36,15 @@
             position: relative;
             z-index: 2;
         }
+        .mastodon-link {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
     <script>
         window.onload = function() {
@@ -49,7 +58,7 @@
 
 <body>
     <img id="img" src="https://files.mastodon.social/accounts/avatars/111/470/305/626/910/504/original/26d855b2f4d5a866.jpg">
-    <a rel="me" href="https://mastodon.social/@CocoaTheOne">Mastodon</a>
+    <a class="mastodon-link" rel="me" href="https://mastodonsocial/@CocoaTheOne">Mastodon</a>
 </body>
 
 </html>
