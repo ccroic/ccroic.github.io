@@ -5,17 +5,28 @@
     <title>Zooming Image</title>
     <style>
         body {
-            background-color: black;
+            background-color: gray;
             color: #fff;
             text-align: center;
             margin: 0;
             padding: 15px;
             font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         img {
             width: 400px;
             height: auto;
             transition: all 1s;
+            position: relative;
+            z-index: 1;
+        }
+        a {
+            position: relative;
+            z-index: 2;
         }
     </style>
     <script>
@@ -30,7 +41,7 @@
     </script>
 </head>
 <body>
-    <img id="img" src="https://via.placeholder.com/260x180" onclick="showImage()" onmouseout="hideImage()">
-    <a rel="me" href="https://mastodonsocial/@CocoaTheOne">Mastodon</a>
+    <img id="img" src="https://files.mastodon.social/accounts/avatars/111/470/305/626/910/504/original/26d855b2f4d5a866.jpg" onclick="showImage()" onmouseout="hideImage()">
+    <a rel="me" href="https://mastodon.social/@CocoaTheOne">Mastodon</a>
 </body>
 </html>
