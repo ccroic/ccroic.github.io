@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Zooming Image</title>
@@ -17,31 +18,37 @@
             justify-content: center;
             height: 100vh;
         }
-        img {
+      
+        #img {
             width: 400px;
             height: auto;
             transition: all 1s;
-            position: relative;
-            z-index: 1;
+            opacity: 0;
+            transform: scale(1.5);
         }
+      
+        .zoomed {
+            opacity: 1;
+            transform: scale(1);
+        }
+      
         a {
             position: relative;
             z-index: 2;
         }
     </style>
     <script>
-        function showImage() {
-            document.getElementById("img").style.transform = "scale(1.5)";
-        }
-        function hideImage() {
-            setTimeout(function() {
-                document.getElementById("img").style.transform = "scale(1)";
-            }, 1000);
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById("img").classList.add("zoomed");
+            }, 500);
         }
     </script>
 </head>
+
 <body>
-    <img id="img" src="https://files.mastodon.social/accounts/avatars/111/470/305/626/910/504/original/26d855b2f4d5a866.jpg" onclick="showImage()" onmouseout="hideImage()">
+    <img id="img" src="https://files.mastodon.social/accounts/avatars/111/470/305/626/910/504/original/26d855b2f4d5a866.jpg">
     <a rel="me" href="https://mastodon.social/@CocoaTheOne">Mastodon</a>
 </body>
+
 </html>
